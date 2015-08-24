@@ -7,17 +7,8 @@ using System.Web.UI.WebControls;
 
 public partial class _Default : System.Web.UI.Page 
 {
-    public RegistrationInformation RegistrationInformation
+    protected void Page_Load(object sender, EventArgs e)
     {
-        get
-        {
-            return new RegistrationInformation()
-            {
-                FirstName = textFirstName.Text,
-                LastName = textLastName.Text,
-                Email = textLastName.Text,
-                SelectedEvent = dropDownListEvents.SelectedValue
-            };
-        }
+
     }
 }
