@@ -1,0 +1,5 @@
+C:\BegVCSharp\Chapter14\Ch14Ex03\ExtensionLib\bin\Debug\ExtensionLib.dll
+C:\BegVCSharp\Chapter14\Ch14Ex03\ExtensionLib\bin\Debug\ExtensionLib.pdb
+C:\BegVCSharp\Chapter14\Ch14Ex03\ExtensionLib\obj\Debug\ExtensionLib.csprojResolveAssemblyReference.cache
+C:\BegVCSharp\Chapter14\Ch14Ex03\ExtensionLib\obj\Debug\ExtensionLib.dll
+C:\BegVCSharp\Chapter14\Ch14Ex03\ExtensionLib\obj\Debug\ExtensionLib.pdb

@@ -1,0 +1,6 @@
+C:\BegVCSharp\Chapter11\Practic\Practic\bin\Debug\Practic.exe.config
+C:\BegVCSharp\Chapter11\Practic\Practic\obj\Debug\Practic.csprojResolveAssemblyReference.cache
+C:\BegVCSharp\Chapter11\Practic\Practic\bin\Debug\Practic.exe
+C:\BegVCSharp\Chapter11\Practic\Practic\bin\Debug\Practic.pdb
+C:\BegVCSharp\Chapter11\Practic\Practic\obj\Debug\Practic.exe
+C:\BegVCSharp\Chapter11\Practic\Practic\obj\Debug\Practic.pdb

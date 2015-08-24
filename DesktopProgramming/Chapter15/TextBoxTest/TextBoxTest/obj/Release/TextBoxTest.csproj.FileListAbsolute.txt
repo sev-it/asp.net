@@ -1,0 +1,9 @@
+C:\BegVCSharp\Chapter15\TextBoxTest\TextBoxTest\bin\Release\TextBoxTest.exe.config
+C:\BegVCSharp\Chapter15\TextBoxTest\TextBoxTest\bin\Release\TextBoxTest.exe
+C:\BegVCSharp\Chapter15\TextBoxTest\TextBoxTest\bin\Release\TextBoxTest.pdb
+C:\BegVCSharp\Chapter15\TextBoxTest\TextBoxTest\obj\Release\TextBoxTest.csprojResolveAssemblyReference.cache
+C:\BegVCSharp\Chapter15\TextBoxTest\TextBoxTest\obj\Release\TextBoxTest.Form1.resources
+C:\BegVCSharp\Chapter15\TextBoxTest\TextBoxTest\obj\Release\TextBoxTest.Properties.Resources.resources
+C:\BegVCSharp\Chapter15\TextBoxTest\TextBoxTest\obj\Release\TextBoxTest.csproj.GenerateResource.Cache
+C:\BegVCSharp\Chapter15\TextBoxTest\TextBoxTest\obj\Release\TextBoxTest.exe
+C:\BegVCSharp\Chapter15\TextBoxTest\TextBoxTest\obj\Release\TextBoxTest.pdb

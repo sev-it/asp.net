@@ -1,0 +1,6 @@
+C:\BegVCSharp\Chapter14\Ch14Ex05\Ch14Ex05\bin\Debug\Ch14Ex05.exe.config
+C:\BegVCSharp\Chapter14\Ch14Ex05\Ch14Ex05\bin\Debug\Ch14Ex05.exe
+C:\BegVCSharp\Chapter14\Ch14Ex05\Ch14Ex05\bin\Debug\Ch14Ex05.pdb
+C:\BegVCSharp\Chapter14\Ch14Ex05\Ch14Ex05\obj\Debug\Ch14Ex05.csprojResolveAssemblyReference.cache
+C:\BegVCSharp\Chapter14\Ch14Ex05\Ch14Ex05\obj\Debug\Ch14Ex05.exe
+C:\BegVCSharp\Chapter14\Ch14Ex05\Ch14Ex05\obj\Debug\Ch14Ex05.pdb

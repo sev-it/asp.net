@@ -1,0 +1,1 @@
+C:\BegVCSharp\Chapter15\TextBoxTest\TextBoxTest\bin\Debug\TextBoxTest.exe.config

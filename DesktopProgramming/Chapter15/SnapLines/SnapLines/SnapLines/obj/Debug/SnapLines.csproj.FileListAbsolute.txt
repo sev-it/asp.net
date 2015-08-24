@@ -1,0 +1,18 @@
+C:\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\bin\Debug\SnapLines.exe.config
+C:\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\bin\Debug\SnapLines.exe
+C:\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\bin\Debug\SnapLines.pdb
+C:\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\obj\Debug\SnapLines.csprojResolveAssemblyReference.cache
+C:\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\obj\Debug\SnapLines.Form1.resources
+C:\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\obj\Debug\SnapLines.Properties.Resources.resources
+C:\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\obj\Debug\SnapLines.csproj.GenerateResource.Cache
+C:\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\obj\Debug\SnapLines.exe
+C:\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\obj\Debug\SnapLines.pdb
+D:\Soft\MS SQL Express\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\bin\Debug\SnapLines.exe.config
+D:\Soft\MS SQL Express\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\obj\Debug\SnapLines.exe
+D:\Soft\MS SQL Express\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\obj\Debug\SnapLines.pdb
+D:\Soft\MS SQL Express\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\bin\Debug\SnapLines.exe
+D:\Soft\MS SQL Express\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\bin\Debug\SnapLines.pdb
+D:\Soft\MS SQL Express\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\obj\Debug\SnapLines.csprojResolveAssemblyReference.cache
+D:\Soft\MS SQL Express\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\obj\Debug\SnapLines.Form1.resources
+D:\Soft\MS SQL Express\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\obj\Debug\SnapLines.Properties.Resources.resources
+D:\Soft\MS SQL Express\BegVCSharp\Chapter15\SnapLines\SnapLines\SnapLines\obj\Debug\SnapLines.csproj.GenerateResource.Cache

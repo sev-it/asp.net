@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch13CardLib", "Ch13CardLib\Ch13CardLib.csproj", "{ED8D44EC-D6BC-44DA-92B8-66DCF7D8F7F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch13CardClient", "Ch13CardClient\Ch13CardClient.csproj", "{48235F3F-05CC-4258-9D70-3BE390B5C4EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED8D44EC-D6BC-44DA-92B8-66DCF7D8F7F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED8D44EC-D6BC-44DA-92B8-66DCF7D8F7F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED8D44EC-D6BC-44DA-92B8-66DCF7D8F7F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED8D44EC-D6BC-44DA-92B8-66DCF7D8F7F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48235F3F-05CC-4258-9D70-3BE390B5C4EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48235F3F-05CC-4258-9D70-3BE390B5C4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48235F3F-05CC-4258-9D70-3BE390B5C4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48235F3F-05CC-4258-9D70-3BE390B5C4EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

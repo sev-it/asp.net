@@ -1,0 +1,8 @@
+C:\BegVCSharp\Chapter13\Ch13CardLib\Ch13CardClient\bin\Debug\Ch13CardClient.exe.config
+C:\BegVCSharp\Chapter13\Ch13CardLib\Ch13CardClient\bin\Debug\Ch13CardClient.exe
+C:\BegVCSharp\Chapter13\Ch13CardLib\Ch13CardClient\bin\Debug\Ch13CardClient.pdb
+C:\BegVCSharp\Chapter13\Ch13CardLib\Ch13CardClient\bin\Debug\Ch13CardLib.dll
+C:\BegVCSharp\Chapter13\Ch13CardLib\Ch13CardClient\bin\Debug\Ch13CardLib.pdb
+C:\BegVCSharp\Chapter13\Ch13CardLib\Ch13CardClient\obj\Debug\Ch13CardClient.csprojResolveAssemblyReference.cache
+C:\BegVCSharp\Chapter13\Ch13CardLib\Ch13CardClient\obj\Debug\Ch13CardClient.exe
+C:\BegVCSharp\Chapter13\Ch13CardLib\Ch13CardClient\obj\Debug\Ch13CardClient.pdb

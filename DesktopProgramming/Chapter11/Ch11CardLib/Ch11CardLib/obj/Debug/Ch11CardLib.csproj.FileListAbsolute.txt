@@ -1,0 +1,5 @@
+C:\BegVCSharp\Chapter11\Ch11CardLib\Ch11CardLib\bin\Debug\Ch11CardLib.dll
+C:\BegVCSharp\Chapter11\Ch11CardLib\Ch11CardLib\bin\Debug\Ch11CardLib.pdb
+C:\BegVCSharp\Chapter11\Ch11CardLib\Ch11CardLib\obj\Debug\Ch11CardLib.csprojResolveAssemblyReference.cache
+C:\BegVCSharp\Chapter11\Ch11CardLib\Ch11CardLib\obj\Debug\Ch11CardLib.dll
+C:\BegVCSharp\Chapter11\Ch11CardLib\Ch11CardLib\obj\Debug\Ch11CardLib.pdb
