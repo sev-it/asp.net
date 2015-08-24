@@ -1,5 +1,0 @@
-C:\BegVCSharp\Chapter10\Ch10CardLib\Ch10CardLib\bin\Debug\Ch10CardLib.dll
-C:\BegVCSharp\Chapter10\Ch10CardLib\Ch10CardLib\bin\Debug\Ch10CardLib.pdb
-C:\BegVCSharp\Chapter10\Ch10CardLib\Ch10CardLib\obj\Debug\Ch10CardLib.csprojResolveAssemblyReference.cache
-C:\BegVCSharp\Chapter10\Ch10CardLib\Ch10CardLib\obj\Debug\Ch10CardLib.dll
-C:\BegVCSharp\Chapter10\Ch10CardLib\Ch10CardLib\obj\Debug\Ch10CardLib.pdb

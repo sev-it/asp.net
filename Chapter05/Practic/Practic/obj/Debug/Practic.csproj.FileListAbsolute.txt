@@ -1,6 +1,0 @@
-C:\BegVCSharp\Chapter05\Practic\Practic\bin\Debug\Practic.exe.config
-C:\BegVCSharp\Chapter05\Practic\Practic\obj\Debug\Practic.csprojResolveAssemblyReference.cache
-C:\BegVCSharp\Chapter05\Practic\Practic\bin\Debug\Practic.exe
-C:\BegVCSharp\Chapter05\Practic\Practic\bin\Debug\Practic.pdb
-C:\BegVCSharp\Chapter05\Practic\Practic\obj\Debug\Practic.exe
-C:\BegVCSharp\Chapter05\Practic\Practic\obj\Debug\Practic.pdb

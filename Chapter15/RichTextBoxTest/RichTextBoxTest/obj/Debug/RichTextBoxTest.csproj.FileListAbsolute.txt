@@ -1,1 +1,0 @@
-C:\BegVCSharp\Chapter15\RichTextBoxTest\RichTextBoxTest\bin\Debug\RichTextBoxTest.exe.config

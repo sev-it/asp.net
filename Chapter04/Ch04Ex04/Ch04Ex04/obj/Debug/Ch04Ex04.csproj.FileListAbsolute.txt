@@ -1,6 +1,0 @@
-C:\BegVCSharp\Chapter04\Ch04Ex04\Ch04Ex04\bin\Debug\Ch04Ex04.exe.config
-C:\BegVCSharp\Chapter04\Ch04Ex04\Ch04Ex04\bin\Debug\Ch04Ex04.exe
-C:\BegVCSharp\Chapter04\Ch04Ex04\Ch04Ex04\bin\Debug\Ch04Ex04.pdb
-C:\BegVCSharp\Chapter04\Ch04Ex04\Ch04Ex04\obj\Debug\Ch04Ex04.csprojResolveAssemblyReference.cache
-C:\BegVCSharp\Chapter04\Ch04Ex04\Ch04Ex04\obj\Debug\Ch04Ex04.exe
-C:\BegVCSharp\Chapter04\Ch04Ex04\Ch04Ex04\obj\Debug\Ch04Ex04.pdb

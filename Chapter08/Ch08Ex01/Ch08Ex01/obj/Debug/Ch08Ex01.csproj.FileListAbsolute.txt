@@ -1,9 +1,0 @@
-C:\BegVCSharp\Chapter08\Ch08Ex01\Ch08Ex01\bin\Debug\Ch08Ex01.exe.config
-C:\BegVCSharp\Chapter08\Ch08Ex01\Ch08Ex01\obj\Debug\Ch08Ex01.csprojResolveAssemblyReference.cache
-C:\BegVCSharp\Chapter08\Ch08Ex01\Ch08Ex01\obj\Debug\Ch08Ex01.Form1.resources
-C:\BegVCSharp\Chapter08\Ch08Ex01\Ch08Ex01\obj\Debug\Ch08Ex01.Properties.Resources.resources
-C:\BegVCSharp\Chapter08\Ch08Ex01\Ch08Ex01\obj\Debug\Ch08Ex01.csproj.GenerateResource.Cache
-C:\BegVCSharp\Chapter08\Ch08Ex01\Ch08Ex01\bin\Debug\Ch08Ex01.exe
-C:\BegVCSharp\Chapter08\Ch08Ex01\Ch08Ex01\bin\Debug\Ch08Ex01.pdb
-C:\BegVCSharp\Chapter08\Ch08Ex01\Ch08Ex01\obj\Debug\Ch08Ex01.exe
-C:\BegVCSharp\Chapter08\Ch08Ex01\Ch08Ex01\obj\Debug\Ch08Ex01.pdb

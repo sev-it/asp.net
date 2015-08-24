@@ -1,8 +1,0 @@
-C:\BegVCSharp\Chapter09\Traffic\Traffic\bin\Debug\Traffic.exe.config
-C:\BegVCSharp\Chapter09\Traffic\Traffic\obj\Debug\Traffic.csprojResolveAssemblyReference.cache
-C:\BegVCSharp\Chapter09\Traffic\Traffic\bin\Debug\Traffic.exe
-C:\BegVCSharp\Chapter09\Traffic\Traffic\bin\Debug\Traffic.pdb
-C:\BegVCSharp\Chapter09\Traffic\Traffic\bin\Debug\Vehicles.dll
-C:\BegVCSharp\Chapter09\Traffic\Traffic\bin\Debug\Vehicles.pdb
-C:\BegVCSharp\Chapter09\Traffic\Traffic\obj\Debug\Traffic.exe
-C:\BegVCSharp\Chapter09\Traffic\Traffic\obj\Debug\Traffic.pdb

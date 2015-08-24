@@ -1,8 +1,0 @@
-C:\BegVCSharp\Chapter10\Practic\Practic\bin\Debug\Practic.exe.config
-C:\BegVCSharp\Chapter10\Practic\Practic\obj\Debug\Practic.csprojResolveAssemblyReference.cache
-C:\BegVCSharp\Chapter10\Practic\Practic\bin\Debug\Practic.exe
-C:\BegVCSharp\Chapter10\Practic\Practic\bin\Debug\Practic.pdb
-C:\BegVCSharp\Chapter10\Practic\Practic\obj\Debug\Practic.exe
-C:\BegVCSharp\Chapter10\Practic\Practic\obj\Debug\Practic.pdb
-C:\BegVCSharp\Chapter10\Practic\Practic\bin\Debug\Ch10CardLib.dll
-C:\BegVCSharp\Chapter10\Practic\Practic\bin\Debug\Ch10CardLib.pdb
