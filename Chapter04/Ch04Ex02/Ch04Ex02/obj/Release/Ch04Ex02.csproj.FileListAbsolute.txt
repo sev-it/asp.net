@@ -1,0 +1,5 @@
+C:\BegVCSharp\Chapter04\Ch04Ex02\Ch04Ex02\bin\Release\Ch04Ex02.exe.config
+C:\BegVCSharp\Chapter04\Ch04Ex02\Ch04Ex02\bin\Release\Ch04Ex02.exe
+C:\BegVCSharp\Chapter04\Ch04Ex02\Ch04Ex02\bin\Release\Ch04Ex02.pdb
+C:\BegVCSharp\Chapter04\Ch04Ex02\Ch04Ex02\obj\Release\Ch04Ex02.exe
+C:\BegVCSharp\Chapter04\Ch04Ex02\Ch04Ex02\obj\Release\Ch04Ex02.pdb

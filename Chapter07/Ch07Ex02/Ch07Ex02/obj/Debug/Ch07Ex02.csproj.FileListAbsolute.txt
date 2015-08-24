@@ -1,0 +1,6 @@
+C:\BegVCSharp\Chapter07\Ch07Ex02\Ch07Ex02\bin\Debug\Ch07Ex02.exe.config
+C:\BegVCSharp\Chapter07\Ch07Ex02\Ch07Ex02\bin\Debug\Ch07Ex02.exe
+C:\BegVCSharp\Chapter07\Ch07Ex02\Ch07Ex02\bin\Debug\Ch07Ex02.pdb
+C:\BegVCSharp\Chapter07\Ch07Ex02\Ch07Ex02\obj\Debug\Ch07Ex02.csprojResolveAssemblyReference.cache
+C:\BegVCSharp\Chapter07\Ch07Ex02\Ch07Ex02\obj\Debug\Ch07Ex02.exe
+C:\BegVCSharp\Chapter07\Ch07Ex02\Ch07Ex02\obj\Debug\Ch07Ex02.pdb
