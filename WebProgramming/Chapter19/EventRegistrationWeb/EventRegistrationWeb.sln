@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "EventRegistrationWeb(3)", "http://localhost:1782", "{7F6774FA-931F-4A00-9CBA-1EDADC8FF752}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_1782"
+		Debug.AspNetCompiler.PhysicalPath = "..\EventRegistrationWeb\"
+		Debug.AspNetCompiler.TargetPath = "C:\Users\Администратор\Documents\Visual Studio 2013\Projects\EventRegistrationWeb\Web\PrecompiledWeb\localhost_1782\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_1782"
+		Release.AspNetCompiler.PhysicalPath = "..\EventRegistrationWeb\"
+		Release.AspNetCompiler.TargetPath = "C:\Users\Администратор\Documents\Visual Studio 2013\Projects\EventRegistrationWeb\Web\PrecompiledWeb\localhost_1782\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\EventRegistrationWeb\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F6774FA-931F-4A00-9CBA-1EDADC8FF752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F6774FA-931F-4A00-9CBA-1EDADC8FF752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
