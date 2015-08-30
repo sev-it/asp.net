@@ -11,6 +11,12 @@ public partial class _ResultsPage : System.Web.UI.Page
     {
         try
         {
+            if (!PreviousPage.IsValid)
+            {
+                labelResult.Text = "Error in previous page";
+                return;
+            }
+
             RegistrationInformation ri = PreviousPage.RegistrationInformation;
             labelResult.Text = String.Format("{0} {1} selected the event {2}", 
                                ri.FirstName, ri.LastName, ri.SelectedEvent);
