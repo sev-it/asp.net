@@ -1,0 +1,8 @@
+<InBrowserSettings>
+  <InBrowserSettings.WindowSettings>
+    <WindowSettings Title="Приложение SilverlightPopUp" WindowStyle="BorderlessRoundCornersWindow" />
+  </InBrowserSettings.WindowSettings>
+  <InBrowserSettings.SecuritySettings>
+    <SecuritySettings ElevatedPermissions="Required" />
+  </InBrowserSettings.SecuritySettings>
+</InBrowserSettings>

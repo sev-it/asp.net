@@ -1,0 +1,7 @@
+<OutOfBrowserSettings ShortName="Приложение SilverlightPanoram" EnableGPUAcceleration="False" ShowInstallMenuItem="True">
+  <OutOfBrowserSettings.Blurb>Приложение SilverlightPanoram на рабочем столе: дома, на работе, в пути.</OutOfBrowserSettings.Blurb>
+  <OutOfBrowserSettings.WindowSettings>
+    <WindowSettings Title="Приложение SilverlightPanoram" />
+  </OutOfBrowserSettings.WindowSettings>
+  <OutOfBrowserSettings.Icons />
+</OutOfBrowserSettings>

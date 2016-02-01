@@ -5,7 +5,7 @@
     void Application_Start(object sender, EventArgs e) 
     {
         // Код, выполняемый при запуске приложения
-
+        Application["userCount"] = 0;
     }
     
     void Application_End(object sender, EventArgs e) 
@@ -24,6 +24,9 @@
     {
         // Код, выполняемый при запуске нового сеанса
         Session["mydata"] = 0;
+        Application.Lock();
+        Application["userCount"] = (int)Application["userCount"] + 1;
+        Application.UnLock();
     }
 
     void Session_End(object sender, EventArgs e) 
