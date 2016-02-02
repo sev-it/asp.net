@@ -81,6 +81,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Assist\MessageEnum.cs" />
+    <Compile Include="Models\ResponseDto.cs" />
     <Compile Include="Assist\SizeCounter.cs" />
     <Compile Include="Controllers\FileController.cs" />
     <Compile Include="Global.asax.cs">

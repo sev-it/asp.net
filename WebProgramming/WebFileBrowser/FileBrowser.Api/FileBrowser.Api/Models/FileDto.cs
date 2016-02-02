@@ -18,7 +18,7 @@ namespace FileBrowser.Api.Models
         public string Extension {get; set;}
 
         [DataMember(Name = "path")]
-        public string PathToDirectory {get; set;}
+        public string PathToFile {get; set;}
 
         [DataMember(Name = "creation_time")]
         public string CreationTime { get; set; }
@@ -32,7 +32,7 @@ namespace FileBrowser.Api.Models
             {
                 Name = fileInfo.Name,
                 Extension = fileInfo.Extension,
-                PathToDirectory = fileInfo.DirectoryName,
+                PathToFile = fileInfo.DirectoryName + "\\" + fileInfo.Name,
                 Size = fileInfo.Length * 0.000001,
                 CreationTime = fileInfo.CreationTimeUtc.ToString(new CultureInfo("de-DE"))
             };
