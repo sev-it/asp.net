@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web.Http;
 using Newtonsoft.Json.Serialization;
 using System.Net.Http.Formatting;
+using System.Web.Http.Cors;
 
 namespace FileBrowser.Api
 {
@@ -12,7 +13,7 @@ namespace FileBrowser.Api
         public static void Register(HttpConfiguration config)
         {
             // Конфигурация и службы веб-API
-            
+            config.EnableCors();
             // Маршруты веб-API
             config.MapHttpAttributeRoutes();
 
@@ -21,6 +22,7 @@ namespace FileBrowser.Api
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            
             ConfigureWebApi(config);
         }
 

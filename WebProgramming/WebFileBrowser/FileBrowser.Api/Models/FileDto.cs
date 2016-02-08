@@ -25,6 +25,9 @@ namespace FileBrowser.Api.Models
 
         [DataMember(Name = "size")]
         public double Size { get; set; }
+
+        [DataMember(Name = "img")]
+        public string Img { get; set; }
        
         public static FileDto CreateFromFileInfo(FileInfo fileInfo)
         {
@@ -33,8 +36,9 @@ namespace FileBrowser.Api.Models
                 Name = fileInfo.Name,
                 Extension = fileInfo.Extension,
                 PathToFile = fileInfo.DirectoryName + "\\" + fileInfo.Name,
-                Size = fileInfo.Length * 0.000001,
-                CreationTime = fileInfo.CreationTimeUtc.ToString(new CultureInfo("de-DE"))
+                Size = System.Math.Round(fileInfo.Length * 0.000001, 3),
+                CreationTime = fileInfo.CreationTimeUtc.ToString(new CultureInfo("de-DE")),
+                Img = @"img//file.png"
             };
             return filesDto;
         }

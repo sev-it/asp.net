@@ -19,6 +19,9 @@ namespace FileBrowser.Api.Models
 
         [DataMember(Name = "creation_time")]
         public string CreationTime { get; set; }
+        
+        [DataMember(Name = "img")]
+        public string Img { get; set; }
 
         public static SubFolderDto CreateSubFolderMainInfo(DirectoryInfo directoryInfo)
         {
@@ -27,6 +30,7 @@ namespace FileBrowser.Api.Models
                 Name = directoryInfo.Name,
                 PathToDirectory = directoryInfo.FullName,
                 CreationTime = directoryInfo.CreationTimeUtc.ToString(new CultureInfo("de-DE")),
+                Img = @"img//folder.png",
             };
 
             return subFolderDto;

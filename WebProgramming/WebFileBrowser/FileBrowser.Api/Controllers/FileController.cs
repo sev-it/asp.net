@@ -8,12 +8,14 @@ using System.IO;
 using FileBrowser.Api.Models;
 using FileBrowser.Api.Assist;
 using Newtonsoft.Json;
+using System.Web.Http.Cors;
 
 namespace FileBrowser.Api.Controllers
 {
     [RoutePrefix("api")]
     public class FileController : ApiController
     {
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("directories/{*path}")]
         public IHttpActionResult GetFolder(string path = null)
         {
@@ -22,7 +24,8 @@ namespace FileBrowser.Api.Controllers
                 di = new DirectoryInfo(path);
             else
             {
-                return Ok(ResponseDto<FolderDto>.CreateMessage(MessageEnum.Path, false));
+                var drives = new ResponseDto<DriveDto[]>() { Success = true, Result = DriveDto.AllDrives(DriveInfo.GetDrives()) };
+                return Ok(drives);
             }
 
             if (!di.Exists)
@@ -34,6 +37,7 @@ namespace FileBrowser.Api.Controllers
             return Ok(response);
         }
 
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("counters/{*path}")]
         public IHttpActionResult GetCounters(string path = null)
         {
