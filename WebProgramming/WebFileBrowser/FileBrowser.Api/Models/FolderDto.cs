@@ -29,7 +29,9 @@ namespace FileBrowser.Api.Models
         public static FolderDto CreateFromDirectoryInfo(DirectoryInfo directoryInfo)
         {
             var folderDto = FolderDto.CreateFolderMainInfo(directoryInfo);
-            folderDto.Directories = FolderDto.SubDirectories(directoryInfo.GetDirectories());
+            folderDto.Directories = FolderDto.SubDirectories(directoryInfo.GetDirectories().Where(x =>
+                    !x.Attributes.HasFlag(FileAttributes.ReparsePoint) && !x.Attributes.HasFlag(FileAttributes.System)
+                    ).ToArray());
             folderDto.Files = FolderDto.FileInfoToFilesDto(directoryInfo);
 
             return folderDto;
