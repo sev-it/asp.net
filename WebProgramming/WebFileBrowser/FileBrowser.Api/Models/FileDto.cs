@@ -36,7 +36,7 @@ namespace FileBrowser.Api.Models
                 Name = fileInfo.Name,
                 Extension = fileInfo.Extension,
                 PathToFile = fileInfo.DirectoryName + "\\" + fileInfo.Name,
-                Size = System.Math.Round(fileInfo.Length * 0.000001, 3),
+                Size = System.Math.Round(fileInfo.Length * 0.001, 3),
                 CreationTime = fileInfo.CreationTimeUtc.ToString(new CultureInfo("de-DE")),
                 Img = @"img//file.png"
             };
