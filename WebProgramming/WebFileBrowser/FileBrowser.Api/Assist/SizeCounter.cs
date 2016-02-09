@@ -8,6 +8,8 @@ namespace FileBrowser.Api.Assist
 {
     public class SizeCounter
     {
+        // Подсчитывает количество файлов по заданным критериям размера, исключая из поиска системные и скрытые файлы.
+        // Поиск файлов ведется до того уровня вложенности, пока не встретится PathTooLongException
         public static int[] GetFileSizeCounter(DirectoryInfo dir, int[] counters = null)
         {
             counters = counters ?? (new int[] { 0, 0, 0 });

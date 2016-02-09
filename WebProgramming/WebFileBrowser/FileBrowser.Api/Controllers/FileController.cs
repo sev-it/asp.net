@@ -15,6 +15,8 @@ namespace FileBrowser.Api.Controllers
     [RoutePrefix("api")]
     public class FileController : ApiController
     {
+        // Метод получения информации о текущем каталоге, его вложенных каталогах и файлах. Если параметр path пуст
+        // метод вернёт список разделов жёсткого диска
         [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("directories/{*path}")]
         public IHttpActionResult GetFolder(string path = null)
@@ -36,7 +38,11 @@ namespace FileBrowser.Api.Controllers
             var response = new ResponseDto<FolderDto>() { Success = true, Result = FolderDto.CreateFromDirectoryInfo(di) };
             return Ok(response);
         }
-
+        
+        // Метод подсчета количества файлов по диапазонам размеров:
+        // <= 10mb
+        // > 10mb AND <= 50mb
+        // >= 100mb
         [EnableCors(origins: "*", headers: "*", methods: "*")]
         [Route("counters/{*path}")]
         public IHttpActionResult GetCounters(string path = null)

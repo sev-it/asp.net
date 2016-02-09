@@ -25,7 +25,7 @@ namespace FileBrowser.Api
             
             ConfigureWebApi(config);
         }
-
+        // Метод конфигурации WebApi. Все ответы возвращаются в формате json.
         public static void ConfigureWebApi(HttpConfiguration config)
         {
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();

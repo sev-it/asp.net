@@ -9,6 +9,7 @@ namespace FileBrowser.Api.Models
     [DataContract]
     public class FileSizeDto
     {
+        // Описание свойств и их имен в сериализированном виде
         [DataMember(Name = "less_ten")]
         public int lessTen { get; set; }
 
@@ -18,6 +19,8 @@ namespace FileBrowser.Api.Models
         [DataMember(Name = "over_hundred")]
         public int overHundred { get; set; }
 
+        // Создаёт модель FileSizeDto, которая в последующем отправляется в клиентскую часть.
+        // Данный объект будет хранить в себе информацию о количестве файлов в текущем и вложенных каталогах
         public static FileSizeDto CreateFromArray(int[] counters)
         {
             var fileSizeDto = new FileSizeDto()

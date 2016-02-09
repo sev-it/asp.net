@@ -11,6 +11,7 @@ namespace FileBrowser.Api.Models
     [DataContract]
     public class SubFolderDto
     {
+        // Описание свойств и их имен в сериализированном виде
         [DataMember(Name = "name")]
         public string Name { get; set; }
 
@@ -23,6 +24,8 @@ namespace FileBrowser.Api.Models
         [DataMember(Name = "img")]
         public string Img { get; set; }
 
+        // Возвращает объект SubFolderDto. Массив объектов SubFolderDto является частью FolderDto 
+        // и служит для отображения информации о подкаталогах текущего каталога (1-ый уровень вложенности).
         public static SubFolderDto CreateSubFolderMainInfo(DirectoryInfo directoryInfo)
         {
             var subFolderDto = new SubFolderDto()

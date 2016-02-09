@@ -6,6 +6,7 @@ using System.Web;
 
 namespace FileBrowser.Api.Assist
 {
+    // Вспомогательный класс для генерации сообщений об ошибках
     public class MessageEnum
     {
         public const string Path = "There is no path parameter";

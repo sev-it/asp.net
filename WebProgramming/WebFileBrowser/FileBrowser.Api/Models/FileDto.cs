@@ -11,6 +11,7 @@ namespace FileBrowser.Api.Models
     [DataContract]
     public class FileDto
     {
+        // Описание свойств и их имен в сериализированном виде
         [DataMember(Name="name")]
         public string Name {get; set;}
 
@@ -28,7 +29,9 @@ namespace FileBrowser.Api.Models
 
         [DataMember(Name = "img")]
         public string Img { get; set; }
-       
+
+        // Создает упрощенную модель FileInfo. Массив объектов FileDto является частью FolderDto 
+        // и служит для отображения информации о файлах в текущем каталоге (1-ый уровень вложенности).
         public static FileDto CreateFromFileInfo(FileInfo fileInfo)
         {
             var filesDto = new FileDto

@@ -10,6 +10,7 @@ namespace FileBrowser.Api.Models
     [DataContract]
     public class DriveDto
     {
+        // Описание свойств и их имен в сериализированном виде
         [DataMember(Name="name")]
         public string Name { get; set; }
 
@@ -27,6 +28,7 @@ namespace FileBrowser.Api.Models
             return driveDto;
         }
 
+        // Метод возвращает массив объектов DriveDto, каждый из которых является упрощенной моделью класса DriveInfo
         public static DriveDto[] AllDrives(DriveInfo[] driveCollection)
         {
             DriveDto[] driveDtos = new DriveDto[driveCollection.Length];

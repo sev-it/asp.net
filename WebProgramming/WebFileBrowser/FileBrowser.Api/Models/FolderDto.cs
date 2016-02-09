@@ -11,6 +11,7 @@ namespace FileBrowser.Api.Models
     [DataContract]
     public class FolderDto
     {
+        // Описание свойств и их имен в сериализированном виде
         [DataMember(Name="name")]
         public string Name { get; set; }
 
@@ -26,6 +27,9 @@ namespace FileBrowser.Api.Models
         [DataMember(Name = "files")]
         public FileDto[] Files { get; set; }
 
+        // Метод полной сборки объекта FolderDto:
+        // - получение массива объектов SubFolderDto (списка подкаталогов текущего каталога)
+        // - получение массива объектов FileDto (списка файлов текущего каталога)
         public static FolderDto CreateFromDirectoryInfo(DirectoryInfo directoryInfo)
         {
             var folderDto = FolderDto.CreateFolderMainInfo(directoryInfo);
@@ -37,6 +41,7 @@ namespace FileBrowser.Api.Models
             return folderDto;
         }
 
+        // Метод заполнения основной информации о текущем каталоге
         public static FolderDto CreateFolderMainInfo(DirectoryInfo directoryInfo)
         {
             var foldersDto = new FolderDto()
@@ -49,6 +54,7 @@ namespace FileBrowser.Api.Models
             return foldersDto;
         }
 
+        // Метод получения подкаталогов (1-го уровня вложенности) для для текущего каталога
         public static SubFolderDto[] SubDirectories(DirectoryInfo[] dirInfoCollection)
         {
             SubFolderDto[] foldersCollection = new SubFolderDto[dirInfoCollection.Length];
@@ -62,6 +68,7 @@ namespace FileBrowser.Api.Models
             return foldersCollection;
         }
 
+        // Метод получения списка файлов (1-го уровня вложенности) для текущего каталога
         public static FileDto[] FileInfoToFilesDto(DirectoryInfo directoryInfo)
         {
             FileDto[] filesCollection = new FileDto[directoryInfo.GetFiles().Length];
