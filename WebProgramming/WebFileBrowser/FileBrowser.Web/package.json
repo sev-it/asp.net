@@ -3,7 +3,7 @@
   "private": true,
   "name": "WebFileBrowser.Web",
   "description": "Web application on AngularJS for ASP.NET WebAPI back-end",
-  "repository": "https://github.com/angular/angular-phonecat",
+  "repository": "https://github.com/sev-it/asp.net/tree/master/WebProgramming/WebFileBrowser",
   "license": "",
   "devDependencies": {
     "http-server": "^0.6.1",

@@ -5,14 +5,17 @@ body {
   background: #F3F2F1; /* для браузеров без css3 */
 }
 
-.main{
+.container{
+  width:1000px;
+  margin:0 auto;
+}
 
-}
 ul{
-	list-style: none;
+  list-style: none;
 }
+
 li{
-	 display: inline-block;
+  display: inline-block;
 }
 
 ul.specs {
@@ -42,14 +45,26 @@ ul.specs dt {
   text-align:center;
 }
 
+ul.specs dd {
+  padding-top: 5px;
+  height: 20px;
+  vertical-align: middle;
+  text-align:center;
+}
+
 .rborder{
   border-right: 1px solid #C5C7C8;
 }
 
 h2 {
-  margin: 5em 5em 5em 5;
-  width: 300px;
-  border: 1px solid #C5C7C8;
-  border-radius: 5px;
-  padding-left: 50 px;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-bottom: 1px solid #C5C7C8;
+  border-radius: 0px;
+  margin: 0 auto;
+}
+
+.spn{
+  font-size: 18px;
 }
