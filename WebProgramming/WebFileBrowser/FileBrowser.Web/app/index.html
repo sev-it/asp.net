@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Web file browser</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/table.css">
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-resource/angular-resource.js"></script>
@@ -40,33 +40,29 @@
 	
 	<div class="container"> 
 		<h2 ng-model="currentPath">Current path: <span class="spn">{{currentPath}}</span></h2>
-		<ul>
-			<!--Вывод первого столбца - пути-->
-			<li class="rborder">
-				<dt ng-click="goBack()"><a href="">{{btnBack}}</a></dt>
-				<dt ng-repeat="drive in drives.result" ng-click="goTo(drive.name)"><img ng-src="{{drive.img}}"></img><a href="">{{' '+drive.name+' '}}</a></dt>
-				
-				
-				<dt ng-repeat="folder in subFolders.result.directories" ng-click="goTo(folder.path)"><img ng-src="{{folder.img}}"></img><a href="">{{' '+folder.name+' '}}</a></dt>
-				<dt ng-repeat="file in subFolders.result.files"><img ng-src="{{file.img}}"></img>{{' '+file.name+' '}}</dt>
-			</li>
-			<!--Вывод столбца с рамерами файлов-->
-			<li class="rborder">
-				<dt>{{btnBack.null}}</dt>
-				<dt ng-repeat="drive in drives.result">{{drive.null}}</dt>
-				
-				<dt ng-repeat="folder in subFolders.result.directories">{{folder.null}}</dt>
-				<dt ng-repeat="file in subFolders.result.files">{{file.size + ' Kb'}}</dt>
-			</li>
-			<!--Вывод столбца с датой создания-->
-			<li>
-				<dt>{{btnBack.null}}</dt>
-				<dt ng-repeat="drive in drives.result">{{drive.null}}</dt>
-				
-				<dt ng-repeat="folder in subFolders.result.directories">{{folder.creation_time}}</dt>
-				<dt ng-repeat="file in subFolders.result.files">{{file.creation_time}}</dt>
-			</li>
-		</ul>
+		
+		<table width ="700px" border="1px" align="center">
+		<tr>
+			<td ng-click="goBack()" style="border: 0px; border-bottom=1px;"><a href="">{{btnBack}}</a></td>
+			<td style="border: 0px; border-bottom=1px;"></td>
+			<td style="border: 0px; border-bottom=1px;"></td>
+		</tr>
+		<tr ng-repeat="drive in drives.result" >
+			<td ng-click="goTo(drive.name)"><img ng-src="{{drive.img}}"></img><a href="">{{' '+drive.name+' '}}</a></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr ng-repeat="folder in subFolders.result.directories">
+			<td ng-click="goTo(folder.path)"><img ng-src="{{folder.img}}"></img><a href="">{{' '+folder.name+' '}}</a></td>
+			<td></td>
+			<td style="text-align: center;">{{folder.creation_time}}</td>
+		</tr>
+		<tr ng-repeat="file in subFolders.result.files">
+			<td><img ng-src="{{file.img}}"></img>{{' '+file.name+' '}}</td>
+			<td style="text-align: center;">{{file.size + ' Kb'}}</td>
+			<td style="text-align: center;">{{file.creation_time}}</td>
+		</tr>
+		</table>
 	</div>
   </div>
 
