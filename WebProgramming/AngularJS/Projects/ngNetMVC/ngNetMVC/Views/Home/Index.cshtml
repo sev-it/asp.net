@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html ng-app="ngNetMVC" ng-controller="LandingPageController">
+<head>
+    <title ng-bind="models.helloAngular"></title>
+    <base href="/">
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" ng-click="navbarProperties.isCollapsed = !navbarProperties.isCollapsed">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">AngularJS + ASP.NET MVC 5</a>
+            </div>
+            <div class="navbar-collapse collapse" collapse="navbarProperties.isCollapsed">
+                <ul class="nav navbar-nav">
+                    <li><a ui-sref="stateOne({ donuts: 12 })">State One</a></li>
+                    <li><a ui-sref="stateTwo">State Two</a></li>
+                    <li><a ui-sref="stateThree({ donuts: 4 })">State Three</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a ui-sref="loginRegister">Login / Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mainContent">
+        <div class="row">
+            <div class="col-md-6">
+                <div ui-view="containerOne"></div>
+            </div>
+            <div class="col-md-6">
+                <div ui-view="containerTwo"></div>
+            </div>
+        </div>
+    </div>
+@Scripts.Render("~/bundles/AngularJS")
+@Scripts.Render("~/bundles/ngNetMVC")
+</body>
+</html>

@@ -1,0 +1,13 @@
+    <!doctype html>
+    <html ng-app>
+      <head>
+        <script src="http://code.angularjs.org/1.1.4/angular.min.js"></script>
+      </head>
+      <body>
+        <div ng-init="list = ['Chrome', 'Safari', 'Firefox', 'IE'] ">
+          Формат числа: {{ 1234567890 | number }} <br>
+          фильтрация массива <input ng-model="model_name">
+          {{ list | filter:model_name | json }}
+        </div>
+      </body>
+    </html>
