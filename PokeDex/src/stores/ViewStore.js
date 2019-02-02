@@ -25,7 +25,7 @@ export default class ViewStore {
   }
 
   setSearchValue = (value) => {
-    this.searchValue = value;
+    this.searchValue = value ? value.toLowerCase() : "";
     this.resetPgination();
   }
 
