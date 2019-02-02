@@ -20,7 +20,13 @@ export default class DataStore {
   async loadPokemons() {
     this.viewStore.setLoading(true);
     try {
-      let P = new Pokedox();
+      const options = {
+        protocol: 'https',
+        versionPath: '/api/v2/',
+        cache: true,
+        timeout: 5 * 1000 // 5s
+      }
+      let P = new Pokedox(options);
       let response = await P.getPokemonsList();
       this.pokemonsCount = response.count;
       let pokeList = [...response.results];
@@ -51,7 +57,13 @@ export default class DataStore {
   async setPokemonStats() {
     this.viewStore.setLoading(true);
     let result = this.getPokemons;
-    let P = new Pokedox();
+    const options = {
+      protocol: 'https',
+      versionPath: '/api/v2/',
+      cache: true,
+      timeout: 5 * 1000 // 5s
+    }
+    let P = new Pokedox(options);
     for (let item of result) {
      await P.getPokemonByName(item.name).then(pInfo => {
         item.id = pInfo.id;

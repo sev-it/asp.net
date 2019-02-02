@@ -23,17 +23,20 @@ class AppHeader extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener("resize", this.updateWindowDimensions);
   }
-  
+
   componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
+    window.removeEventListener("resize", this.updateWindowDimensions);
   }
-  
+
   updateWindowDimensions() {
     let currWidth = this.state.width;
     let newWidth = window.innerWidth;
-    if ((currWidth >= 658 && newWidth < 658) || (currWidth < 658 && newWidth >= 658)) {
+    if (
+      (currWidth >= 658 && newWidth < 658) ||
+      (currWidth < 658 && newWidth >= 658)
+    ) {
       this.setState({ width: window.innerWidth });
     }
   }
@@ -50,7 +53,10 @@ class AppHeader extends React.Component {
   // Обработчик поля ввода поиска
   handleSearchBoxChange = event => {
     let searchValue = event.target.value;
-    if ( (searchValue && (searchValue.length >= 3 || searchValue.length === 0)) || !searchValue ) {
+    if (
+      (searchValue && (searchValue.length >= 3 || searchValue.length === 0)) ||
+      !searchValue
+    ) {
       this.delay(() => {
         this.props.viewStore.setSearchValue(searchValue);
         this.props.dataStore.setPokemonStats();
@@ -64,7 +70,6 @@ class AppHeader extends React.Component {
   };
 
   render() {
-    console.log("rerender AppHeader");
     const { classes, viewStore } = this.props;
     return (
       <div className={classes.root}>
@@ -92,56 +97,63 @@ class AppHeader extends React.Component {
               />
             </div>
             <div>
-              <FormLabel component="legend" classes={{
-                root: classes.formLabelRoot
-              }}>Представление:</FormLabel>
-              <FormGroup row classes={{
-                root: classes.fgRoot
-              }}>
-                  <FormControlLabel
-                    value={TABLE_VIEW}
-                    control={
-                      <Radio
-                        checked={viewStore.view === TABLE_VIEW}
-                        onChange={this.setView}
-                        value={TABLE_VIEW}
-                        name={TABLE_VIEW}
-                        classes={{
-                          root: classes.rbRoot,
-                          checked: classes.rbChecked
-                        }}
-                      />
-                    }
-                    label="Таблица"
-                    labelPlacement={this.state.width >= 658 ? "start" : "end"}
-                    classes={{
-                      label: classes.formControlLabel,
-                      labelPlacementStart: classes.formControlLabelStart
-                    }}
-                  />
-                  <FormControlLabel
-                    value={CARDS_VIEW}
-                    control={
-                      <Radio
-                        checked={viewStore.view === CARDS_VIEW}
-                        onChange={this.handleChange}
-                        value={CARDS_VIEW}
-                        name={CARDS_VIEW}
-                        classes={{
-                          root: classes.rbRoot,
-                          checked: classes.rbChecked
-                        }}
-                      />
-                    }
-                    label="Карточки"
-                    labelPlacement="end"
-                    classes={{
-                      label: classes.formControlLabel
-                    }}
-                  />
+              <FormLabel
+                component="legend"
+                classes={{
+                  root: classes.formLabelRoot
+                }}
+              >
+                Представление:
+              </FormLabel>
+              <FormGroup
+                row
+                classes={{
+                  root: classes.fgRoot
+                }}
+              >
+                <FormControlLabel
+                  value={TABLE_VIEW}
+                  control={
+                    <Radio
+                      checked={viewStore.view === TABLE_VIEW}
+                      onChange={this.setView}
+                      value={TABLE_VIEW}
+                      name={TABLE_VIEW}
+                      classes={{
+                        root: classes.rbRoot,
+                        checked: classes.rbChecked
+                      }}
+                    />
+                  }
+                  label="Таблица"
+                  labelPlacement={this.state.width >= 658 ? "start" : "end"}
+                  classes={{
+                    label: classes.formControlLabel,
+                    labelPlacementStart: classes.formControlLabelStart
+                  }}
+                />
+                <FormControlLabel
+                  value={CARDS_VIEW}
+                  control={
+                    <Radio
+                      checked={viewStore.view === CARDS_VIEW}
+                      onChange={this.setView}
+                      value={CARDS_VIEW}
+                      name={CARDS_VIEW}
+                      classes={{
+                        root: classes.rbRoot,
+                        checked: classes.rbChecked
+                      }}
+                    />
+                  }
+                  label="Карточки"
+                  labelPlacement="end"
+                  classes={{
+                    label: classes.formControlLabel
+                  }}
+                />
               </FormGroup>
             </div>
-            
           </Toolbar>
         </AppBar>
       </div>

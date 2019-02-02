@@ -189,7 +189,7 @@ class CardView extends React.Component {
             <Grid
               container
               direction="row"
-              spacing={ataStore.getPokemons && dataStore.getPokemons.length > 0 ? 16 :0}
+              spacing={dataStore.getPokemons && dataStore.getPokemons.length > 0 ? 16 :0}
               justify={
                 this.state.width >= 547 &&
                 dataStore.getPokemon &&
