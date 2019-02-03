@@ -21,6 +21,13 @@ const cardViewStyles = theme => ({
   },
   gridRoot: {
     flexGrow: "1",
+  },
+  gridNormal: {
+    width: "100%",
+    margin: "-8px"
+  },
+  gridEmpty: {
+    margin: 0
   }
 });
 

@@ -80,7 +80,7 @@ class CardView extends React.Component {
   // Отрисовка светофоров с типами покемона
   renderTypesSection = pokemon => {
     let { classes } = this.props;
-
+    if (!pokemon || !pokemon.types) return (null);
     let types = pokemon.types.map(t => {
       let className = `${classes.flexItem} ${classes.typeCircle} ${
         classes[PokemonType[t.type.name].color || "unknow"]
@@ -106,7 +106,7 @@ class CardView extends React.Component {
   // Отрисовка характеристик покемона
   renderStatSection = pokemon => {
     let { classes } = this.props;
-
+    if (!pokemon || !pokemon.stats) return (null);
     return (
       <Table className={classes.table}>
         <TableBody>
@@ -198,6 +198,9 @@ class CardView extends React.Component {
                   : "center"
               }
               alignItems="center"
+              classes={{
+                'spacing-xs-16': dataStore.getPokemons && dataStore.getPokemons.length > 0 ? classes.gridNormal : classes.gridEmpty
+              }}
             >
               {dataStore.getPokemons && dataStore.getPokemons.length > 0 ? (
                 dataStore.getPokemons.map(row => this.renderCardSection(row))

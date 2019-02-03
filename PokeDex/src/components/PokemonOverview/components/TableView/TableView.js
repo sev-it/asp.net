@@ -24,7 +24,7 @@ class TableView extends React.Component {
   // Отрисовка типов покемона
   renderTypesSection = pokemon => {
     let { classes } = this.props;
-
+    if (!pokemon || !pokemon.types) return (null);
     let types = pokemon.types.map(t => {
       let className = `${classes.flexItem} ${classes.typeCircle} ${
         classes[PokemonType[t.type.name].color || "unknow"]
@@ -91,7 +91,7 @@ class TableView extends React.Component {
               </TableRow>
             </TableHead>
             <TableBody>
-              {dataStore.getPokemons && dataStore.getPokemons.length > 0 ? (
+              {dataStore && dataStore.getPokemons && dataStore.getPokemons.length > 0 ? (
                 dataStore.getPokemons.map(row => (
                   <TableRow key={row.name}>
                     <TableCell align="center">
