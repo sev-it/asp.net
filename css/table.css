@@ -1,0 +1,102 @@
+/* app css stylesheet */
+
+body {
+  padding-top: 20px;
+  background: #F3F2F1; /* для браузеров без css3 */
+}
+
+.container{
+  width:1000px;
+  margin:0 auto;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  display: inline-block;
+}
+
+ul.specs {
+  font-size: 0;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.specs > li{
+  border-left: 1px solid #C5C7C8;
+  border-top: 1px solid #C5C7C8;
+  border-bottom: 1px solid #C5C7C8;
+  font-size: 18px;
+  display: inline-block;
+  width: 200px;
+  vertical-align: middle;
+  text-align:center;
+}
+
+ul.specs dt {
+  height: 30px;
+  font-weight: bold;
+  background-color: #C5C7C8;
+  vertical-align: middle;
+  text-align:center;
+}
+
+ul.specs dd {
+  padding-top: 5px;
+  height: 20px;
+  vertical-align: middle;
+  text-align:center;
+}
+
+.rborder{
+  border-right: 1px solid #C5C7C8;
+}
+
+h2 {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 135px;
+  border-bottom: 1px solid #C5C7C8;
+  border-radius: 0px;
+  margin: 0 auto;
+}
+
+table.maintbl {
+	width:700px;
+	border: 1px solid #C5C7C8;
+	margin:0 auto;
+}
+
+table.maintbl tr:first-child{
+	border: 0px;
+	text-shadow: 1px;
+	font-weight: bold;
+}
+
+table.maintbl tr{
+	border: 1px solid #C5C7C8;
+}
+
+table.maintbl td:first-child{
+	border: 1px solid #C5C7C8; 
+	text-align: left;
+	padding-left: 5px
+}
+
+table.maintbl td {
+	border: 1px solid #C5C7C8; 
+	text-align: center;
+}
+
+table.maintbl td.customtd {
+	border: 0px; 
+	border-bottom: 1px;
+}
+
+.spn{
+  font-size: 18px;
+}

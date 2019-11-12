@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" ng-app="WebFileBrowser">
+<head>
+  <meta charset="utf-8">
+  <title>Web file browser</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/table.css">
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
+</head>
+<body ng-controller="DataController">
+  <div>
+	<div align="center"class="container">
+	<!--Вывод счетчиков файлов-->
+		<ul class="specs">
+			<li>
+				<dl>
+					<dt>Less 10Mb</dt>
+					<dd>{{counters.result.less_ten}}</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt>10Mb - 50Mb</dt>
+					<dd>{{counters.result.ten_to_fifty}}</dd>
+				</dl>
+			</li>
+			<li class="rborder">
+				<dl>
+					<dt>More 100Mb</dt>
+					<dd>{{counters.result.over_hundred}}</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="container"> 
+		<h2 ng-model="currentPath">Current path: <span class="spn">{{currentPath}}</span></h2>
+		
+		<table class="maintbl">
+		<tr>
+			<td ng-click="goBack()" class="customtd"><a href="">{{btnBack}}</a></td>
+			<td class="customtd"></td>
+			<td class="customtd"></td>
+		</tr>
+		<tr ng-repeat="drive in drives.result">
+			<td ng-click="goTo(drive.name)" class="customtd"><img ng-src="{{drive.img}}"></img><a href="">{{' '+drive.name+' '}}</a></td>
+			<td class="customtd"></td>
+			<td class="customtd"></td>
+		</tr>
+		<tr ng-repeat="folder in subFolders.result.directories">
+			<td ng-click="goTo(folder.path)"><img ng-src="{{folder.img}}"></img><a href="">{{' '+folder.name+' '}}</a></td>
+			<td></td>
+			<td>{{folder.creation_time}}</td>
+		</tr>
+		<tr ng-repeat="file in subFolders.result.files">
+			<td><img ng-src="{{file.img}}"></img>{{' '+file.name+' '}}</td>
+			<td>{{file.size + ' Kb'}}</td>
+			<td>{{file.creation_time}}</td>
+		</tr>
+		</table>
+	</div>
+  </div>
+
+</body>
+</html>
